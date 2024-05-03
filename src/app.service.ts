@@ -7,9 +7,9 @@ import { ICustomerTotalLoanApplication } from './interfaces/customer_total_loan_
 @Injectable()
 export class AppService {
   constructor(
-    private loanApplications: LoanApplicationsRepository,
-    private customers: CustomerRepository,
-    private loanOffers: LoanOffersRepository,
+    // private loanApplications: LoanApplicationsRepository,
+    // private customers: CustomerRepository,
+    // private loanOffers: LoanOffersRepository,
   ) {}
 
   /**
@@ -19,8 +19,10 @@ export class AppService {
   async getCustomersLoanApplicationSummaries(): Promise<
     ICustomerTotalLoanApplication[]
   > {
-    const result = await this.loanApplications.store.aggregate([]);
+    // const result = await this.loanApplications.store.aggregate([]);
 
-    return result as any;
+    // return result as any;
+
+    return [];
   }
 }
